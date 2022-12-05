@@ -4,7 +4,7 @@ from .forms import *
 
 # Create your views here.
 def index(request):
-    interest = Interests.objects.all()[0:12]
+    interest = Interests.objects.all().order_by('?')[0:12]
     service = Services.objects.all()[0:3]
     form = ContactForm(request.POST)
     if request.method == 'POST':
