@@ -412,7 +412,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
               <div class="icon"><i class="{{ ser.icon }}"></i></div>
-              <h4><a href="">{{ ser.title }}</a></h4>
+              <h4><a href="{% url 'home' %}">{{ ser.title }}</a></h4>
               <p>{{ ser.description }}</p>
             </div>
           </div>
@@ -665,7 +665,7 @@
   </section><!-- End Contact Section -->
 
   <div class="credits">
-    Designed by <a href=" {% url 'home' %} "><span style="color: red;">MD Gol</span><span style="color: green;">am Rabbi</span></a>
+    <a href=" {% url 'home' %} "><span style="color: red;">MD Gol</span><span style="color: green;">am Rabbi</span></a>
   </div>
 
   <!-- Vendor JS Files -->
