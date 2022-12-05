@@ -1,0 +1,144 @@
+interest
+
+
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+            <i class="ri-bar-chart-box-line" style="color: #0378de;"></i>
+            <h3>Dolor Sitema</h3>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+            <i class="ri-calendar-todo-line" style="color: #e803ab;"></i>
+            <h3>Sed perspiciatis</h3>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+            <i class="ri-paint-brush-line" style="color: #8c00ab;"></i>
+            <h3>Magni Dolores</h3>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+            <i class="ri-database-2-line" style="color: #075087;"></i>
+            <h3>Nemo Enim</h3>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+            <i class="ri-gradienter-line" style="color: #a34404;"></i>
+            <h3>Eiusmod Tempor</h3>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+            <i class="ri-file-list-3-line" style="color: #00534d;"></i>
+            <h3>Midela Teren</h3>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+            <i class="ri-price-tag-2-line" style="color: #1b00a0;"></i>
+            <h3>Pira Neve</h3>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+            <i class="ri-anchor-line" style="color: #ffa600;"></i>
+            <h3>Dirada Pack</h3>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+            <i class="ri-disc-line" style="color: #5d04f7;"></i>
+            <h3>Moton Ideal</h3>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+            <i class="ri-base-station-line" style="color: #804130;"></i>
+            <h3>Verdo Park</h3>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+            <i class="ri-fingerprint-line" style="color: #427b56;"></i>
+            <h3>Flavor Nivelanda</h3>
+            </div>
+        </div>
+
+
+end__interest
+
+favicon
+{% static 'temp_app/assets/img/favicon.png' %}
+
+
+sevice
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4><a href="">Sed ut perspiciatis</a></h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4><a href="">Magni Dolores</a></h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+            <div class="icon"><i class="bx bx-world"></i></div>
+            <h4><a href="">Nemo Enim</a></h4>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+            <div class="icon"><i class="bx bx-slideshow"></i></div>
+            <h4><a href="">Dele cardo</a></h4>
+            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+            <div class="icon"><i class="bx bx-arch"></i></div>
+            <h4><a href="">Divera don</a></h4>
+            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+            </div>
+        </div>
+end__service
+
+Contact
+
+        <div class="row">
+            <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+        </div>
+        <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        
+
+
+endContact
