@@ -246,73 +246,24 @@
       </div>
 
       <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper d-flex">
+          
+          {% for t in testmonials %}
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class=" {{ t.icon1 }} quote-icon-left"></i>
 
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="{% static 'temp_app/assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
-            </div>
-          </div><!-- End testimonial item -->
+                  <span>{{ t.desc|safe }}</span>
 
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="{% static 'temp_app/assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="{% static 'temp_app/assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="{% static 'temp_app/assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="{% static 'temp_app/assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
+                  <i class=" {{ t.icon2 }} quote-icon-right"></i>
+                </p>
+                <img src=" {{ t.profile.url }} " class="testimonial-img" alt="">
+                <h3>{{ t.nam }}</h3>
+                <h4>{{ t.designation }}</h4>
+              </div>
+            </div><!-- End testimonial item -->
+          {% endfor %}
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -338,7 +289,7 @@
         <div class="col-lg-6">
           <h3 class="resume-title">Sumary</h3>
           <div class="resume-item pb-0">
-            <h4>Alice Barkley</h4>
+            <h4>MD Golam Rabbi</h4>
             <p><em>Innovative and deadline-driven Python Django with 2+ years of experience Web developer and Application user-centered digital marketing material from initial concept to a final, polished deliverable.</em></p>
             <p>
             <ul>
@@ -358,7 +309,7 @@
           </div>
           <div class="resume-item">
             <h4>Bachelor of Engineering &amp; Computer Science</h4>
-            <h5>2010 - 2014</h5>
+            <h5>2022 - 2026</h5>
             <p><em>Rajshahi Engineering Science and Technology College, Rajshahi, Bangladesh</em></p>
             <p>Rajshahi University of Engineering & Technology, commonly known as RUET, is a PhD granting public research universities in Bangladesh. It is one of the public universities in the country that specialises in the field of engineering. Like the other public engineering universities in Bangladesh, the admission battle of RUET is considered to be one of the toughest in the country as a student has to go through the selection process based on their grades and after getting selected, written examinationRUET was founded in 1964 as Rajshahi Engineering College with a limited number of students. It was then changed to Bangladesh Institute of Technology (BIT) in 1986 and was finally renamed Rajshahi University of Engineering & Technology (RUET) in 2003 when it gained a university status.</p>
           </div>

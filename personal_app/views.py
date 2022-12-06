@@ -5,6 +5,7 @@ from .forms import *
 # Create your views here.
 def index(request):
     interest = Interests.objects.all().order_by('?')[0:12]
+    testmonials = Testmonials.objects.all()
     service = Services.objects.all()[0:3]
     form = ContactForm(request.POST)
     if request.method == 'POST':
@@ -15,6 +16,7 @@ def index(request):
     
     context = {
         'form':form,
+        'testmonials':testmonials,
         'service':service,
         'interest':interest,
     }
